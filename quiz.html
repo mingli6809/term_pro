@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/css/quiz.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+       
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <title>Quiz App</title>
+    </head>
+    <body>
+        <div id="backButtonContainer">
+            <button class="btn" id="backBtn">Back</button>
+        </div>
+        <div class="main-container">
+            <div class="container" id="game-box">
+                <div id="qCon" class="questions-container" class="hide" style="display: none;">
+                    <div id="question"></div>
+                    <div class="btn-grid">
+                        <button class="btn" id="btn1">Answer 1</button>
+                        <button class="btn" id="btn2" >Answer 2</button>
+                        <button class="btn" id="btn3" >Answer 3</button>
+                        <button class="btn" id="btn4" >Answer 4</button>
+                    </div>
+                </div>
+                <div id="filler">
+                    <div id="correctPopUp" style="display: none;">
+                        <h2>Correct!</h2>
+                    </div>
+                    <div id="incorrectPopUp" style="display: none;">
+                        <h2>Incorrect.</h2>
+                    </div>
+                </div>
+                <div class="control-buttons">
+                    <button id="start-btn" class="btn" onclick="startGame()">Start</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/js/quizLogic.js"></script>
+    </body>
+</html>
